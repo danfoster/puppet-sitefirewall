@@ -1,0 +1,5 @@
+fixtures:
+  forge_modules:
+    firewall: "puppetlabs/firewall"
+  symlinks:
+    sitefirewall: "#{source_dir}"
