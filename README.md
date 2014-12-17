@@ -1,5 +1,7 @@
 # sitefirewall
 
+![Travis CI](https://travis-ci.org/danfoster/puppet-sitefirewall.svg?branch=master)
+
 #### Table of Contents
 
 1. [Overview](#overview)
