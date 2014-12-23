@@ -17,6 +17,5 @@ task :validate do
   end
 end
 
-desc "Run all tests"
-task :default => [:validate, :lint, :spec] do
-end
+Rake::Task[:default].clear
+task :default => [:validate,:lint,:spec]
