@@ -49,6 +49,18 @@ class { '::sitefirewall' }
 
 Then you are able to use `firewall` rules as described on the (`puppetlabs/firewall`)[https://forge.puppetlabs.com/puppetlabs/firewall#usage] page.
 
+### Hiera
+
+Firewall rules can also be defined in hiera using the `firewall` key .e.g.:
+
+```
+firewall:
+  '10 accept SSH':
+    port: 22
+    proto: tcp
+    action: accept
+```
+
 ## Development
 
 Pull requests are gratefully received.

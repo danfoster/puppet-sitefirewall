@@ -19,4 +19,9 @@ class sitefirewall {
   include firewall
   include sitefirewall::pre
   include sitefirewall::post
+
+  $rules = hiera('firewall','')
+  if $rules {
+    create_resources('firewall', $rules)
+  }
 }
