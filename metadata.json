@@ -1,6 +1,6 @@
 {
   "name": "danfoster-sitefirewall",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "danfoster",
   "summary": "A module to provide the nessasary classes required by puppetlabs/firewall",
   "license": "Apache 2.0",
