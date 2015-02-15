@@ -20,7 +20,7 @@ class sitefirewall {
   include sitefirewall::pre
   include sitefirewall::post
 
-  $rules = hiera('firewall','')
+  $rules = hiera_hash('firewall','')
   if $rules {
     create_resources('firewall', $rules)
   }
